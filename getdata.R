@@ -1,11 +1,13 @@
 
 
-knitr::opts_chunk$set(echo = FALSE)
+ knitr::opts_chunk$set(echo = FALSE)
 library(bitops)
 library(XML)
 library(RCurl)
 library(dplyr)
 library(kableExtra)
+library(ggplot2)
+library(ggfortify)
 library(httr)
 library(plyr)
 library(readr)
@@ -256,3 +258,7 @@ df<-kable(data)%>%
 df
 
 write.csv(data,"ufc.csv",row.names=FALSE)
+
+ggplot(data,aes(x= Height, fill = Stance )) + geom_bar()+ theme(axis.text.x = element_text(angle = 90))+ theme(axis.text.x = element_text(face = "bold", color = "black", size = 10),axis.text.y = element_text(face = "bold", color = "black", size = 10))+ scale_x_discrete(name="Height of fighter")+ scale_y_discrete(name="Count")
+
+ggsave("fighter height.png", width = 7, height = 7)
