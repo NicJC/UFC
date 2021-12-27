@@ -254,3 +254,5 @@ df<-kable(data)%>%
 
 
 df
+
+write.csv(data,"ufc.csv",row.names=FALSE)
