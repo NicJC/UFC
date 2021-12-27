@@ -8,7 +8,7 @@ library(dplyr)
 library(kableExtra)
 library(httr)
 library(plyr)
-
+library(readr)
 
 
 # Get the data 
