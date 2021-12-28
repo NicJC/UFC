@@ -5,7 +5,7 @@ UFC Fighters
 
 Check out the [csv](https://github.com/NicJC/UFC/blob/main/ufc.csv) data for a comprehensive list of UFC fighters.
 
-and the below R code for ggplot produces the plot.
+The below R code for ggplot produces the plot below.
 
 ```
 ggplot(data,aes(x= Height, fill = Stance )) 
