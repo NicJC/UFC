@@ -16,6 +16,6 @@ ggplot(data,aes(x= Height, fill = Stance ))
 + labs(title="Count of Height by Fighter stance", subtitle="UFC data", caption="Fighter details")
 ```
 
-![alt text](https://github.com/NicJC/UFC/blob/main/fighter%20height.png)
+![alt text](https://github.com/NicJC/UFC/blob/main/fighter%20height%20and%20stance.png)
 
 
