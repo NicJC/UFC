@@ -267,6 +267,7 @@ ggsave("fighter height.png", width = 6, height = 6)
 
 
 
+
 plt <- plot_ly(
   x = data$Height,
   y = data$Stance,
