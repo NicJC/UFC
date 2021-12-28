@@ -268,20 +268,4 @@ ggsave("fighter height.png", width = 6, height = 6)
 
 
 
-plt <- plot_ly(
-  x = data$Height,
-  y = data$Stance,
-  name = "Fighter Stance",
-  type = "bar"
-  
-)
-plt <- plt %>% layout(title = "Count of Height by Fighter stance and weight",xaxis = list(title = "Height"))
-plt <- plt %>% layout(yaxis = list(title = 'Count'), barmode = 'stack')
-plt <- plt %>% add_trace(y = ~data$Weight, name = 'Weight')
-plt <- plt %>% add_trace(y = ~data$Height, name = 'Height')
-
-
-plt
-
-ggsave("fighter height and stance.png", width = 6, height = 5)
 
